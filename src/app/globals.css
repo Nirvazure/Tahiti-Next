@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f8f8;
+  --foreground: #000000;
+  --primary: "#6ba651";
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-lime-600 text-white py-2 px-4 rounded shadow-sm hover:shadow-md;
+  }
 }
 
 @theme inline {
@@ -19,6 +26,10 @@
   }
 }
 
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
 body {
   background: var(--background);
   color: var(--foreground);

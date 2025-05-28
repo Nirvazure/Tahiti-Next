@@ -1,11 +1,11 @@
-"use client"; // 必须声明为客户端组件
+"use client";
 
 import React from "react";
 
 import { motion } from "framer-motion";
-import { slideUp } from "../../util";
+import { slideUp } from "@/util";
 
-import "./gallery.css";
+import "./Gallery.css";
 
 const Gallery = () => {
   return (

@@ -1,0 +1,27 @@
+.card {
+  width: 460px;
+  height: 260px;
+  align-items: center;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+}
+
+.shell::before {
+  content: "";
+  height: 260px;
+  width: 460px;
+  position: absolute;
+  margin-top: -9px;
+  margin-left: -9px;
+  border: 9px solid #000;
+  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+}
+
+.shell:hover > div,
+.shell:hover::before {
+  transform: none;
+}
+
+.shell > div,
+.shell::before {
+  transition: 0.3s;
+}

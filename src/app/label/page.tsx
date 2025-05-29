@@ -3,8 +3,13 @@ import Cards from "@/components/Cards";
 import CardStacker from "@/components/CardStacker/CardStacker";
 import Accordion from "@/components/Accordion/Accordion";
 
+interface CARD {
+  title: string;
+  img: string;
+}
+
 const label = () => {
-  const cards: Array<any> = [
+  const cards: Array<CARD> = [
     {
       title: "Kevin Garnett",
       img: "https://yqymons-bank.oss-cn-beijing.aliyuncs.com/crafts/bk0.jpg",

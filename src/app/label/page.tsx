@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "@/components/Cards";
 import CardStacker from "@/components/CardStacker/CardStacker";
 import Accordion from "@/components/Accordion/Accordion";
+import Gallery2 from "@/components/Gallery2/Gallery2";
 
 interface CARD {
   title: string;
@@ -30,8 +31,11 @@ const label = () => {
 
   return (
     <div>
+      <Gallery2 cards={cards} />
+
       <Accordion cards={cards} />
       <CardStacker cards={cards} />
+
       <Cards />
     </div>
   );

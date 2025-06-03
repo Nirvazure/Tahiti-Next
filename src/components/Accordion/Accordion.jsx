@@ -4,7 +4,7 @@ const Accordion = (props) => {
   const { cards = [] } = props;
 
   return (
-    <div className="flex justify-center align-middle">
+    <div className="flex justify-center align-middle my-20">
       <div className="flex w-9/10 h-96">
         {cards.map((card, i) => (
           <div key={i} className={styles.box}>

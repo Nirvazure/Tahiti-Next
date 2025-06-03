@@ -12,8 +12,8 @@
 
 .shell .box {
   position: relative;
-  width: 250px;
-  height: 350px;
+  width: 180px;
+  height: 230px;
   transition: 0.3s;
   overflow: hidden;
   margin: 30px;

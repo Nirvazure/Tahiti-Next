@@ -4,7 +4,7 @@ import "./CardStacker.css";
 const CardStacker = (props) => {
   const { cards = [] } = props;
   return (
-    <div className="flex justify-center h-120 mt-10">
+    <div className="flex justify-center h-120 my-20">
       <div className="box relative flex justify-center align-middle">
         {cards.map((card, i) => (
           <div

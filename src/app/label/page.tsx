@@ -31,9 +31,20 @@ const label = () => {
 
   return (
     <div>
-      <Gallery2 cards={cards} />
+      <Gallery2
+        className="h-96 my-20"
+        cards={Array.from({ length: 5 }, (item, i) => ({
+          title: "Keep Calme",
+          img: `https://yqymons-bank.oss-cn-beijing.aliyuncs.com/crafts/keepcalm/kp${i}.jpg`,
+        }))}
+      />
 
-      <Accordion cards={cards} />
+      <Accordion
+        cards={Array.from({ length: 4 }, (item, i) => ({
+          title: "Keep Calme",
+          img: `https://yqymons-bank.oss-cn-beijing.aliyuncs.com/crafts/xjtu/xjtu-${i}.png`,
+        }))}
+      />
       <CardStacker cards={cards} />
 
       <Cards />

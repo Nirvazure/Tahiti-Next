@@ -6,7 +6,7 @@ const Gallery2 = (props) => {
   const { cards = [] } = props;
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center h-96">
       <div className={styles.shell}>
         {cards.map((card, i) => (
           <div className={styles.box} key={i}>
